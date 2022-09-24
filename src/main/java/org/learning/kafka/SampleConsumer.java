@@ -27,7 +27,7 @@ import reactor.kafka.receiver.ReceiverOffset;
         private static final Logger log = LoggerFactory.getLogger(SampleConsumer.class.getName());
 
         private static final String BOOTSTRAP_SERVERS = "localhost:9092";
-        private static final String TOPIC = "theFirstTopic";
+        private static final String TOPIC = "simpleTopic";
 
         private final ReceiverOptions<Integer, String> receiverOptions;
         private final DateTimeFormatter dateFormat;

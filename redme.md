@@ -75,11 +75,11 @@
 
 ***
 1. sudo systemctl start zookeeper.service
-2. 6sudo systemctl start kafka.service
+2. sudo systemctl start kafka.service
 3. sudo systemctl status kafka zookeeper.service
 4. option: create topic 
+5. check topic
    sudo /usr/local/kafka-server/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic theFirstTopic
-5. check topic 
    sudo /usr/local/kafka-server/bin/kafka-topics.sh  --topic theFirstTopic --bootstrap-server localhost:9092
 6. option: test producing
    sudo /usr/local/kafka-server/bin/kafka-console-producer.sh --topic theFirstTopic --bootstrap-server localhost:9092
